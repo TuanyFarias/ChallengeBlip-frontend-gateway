@@ -2,7 +2,8 @@ import { WeatherResponse } from '../dto/WeatherResponse'
 const X_API_KEY = import.meta.env.VITE_X_API_KEY
 
 export async function getWeather(city: string): Promise<WeatherResponse> {
-    const url = `http://localhost:5000/api/weather?city=${encodeURIComponent(city)}`
+    const baseUrl = "https://challengeblip-backend-gateway.onrender.com";
+    const url = `${baseUrl}/api/weather?city=${encodeURIComponent(city)}`;
 
     const response = await fetch(url, {
     headers: {
