@@ -33,7 +33,7 @@ export function Home() {
                 margin: 0
             }}
         >
-            {/* GIF acrescentado aqui, acima da busca e com a largura do card (950px) */}
+            
             <img 
                 src="https://capricho.abril.com.br/wp-content/uploads/2022/08/NegativeFarawayDungenesscrab-size_restricted.gif?w=620" 
                 alt="Weather Animation" 
@@ -52,7 +52,7 @@ export function Home() {
                     type="text"
                     value={city}
                     onChange={e => setCity(e.target.value)}
-                    placeholder="Digite a cidade"
+                    placeholder="Digite a cidade, no seguinte modelo: 'São Paulo, SP' "
                     style={{
                         padding: '10px',
                         borderRadius: '5px',
