@@ -52,7 +52,7 @@ export function Home() {
                     type="text"
                     value={city}
                     onChange={e => setCity(e.target.value)}
-                    placeholder="Cidade e Estado: 'São Paulo, SP' "
+                    placeholder="Digite o nome da cidade"
                     style={{
                         padding: '10px',
                         borderRadius: '5px',
